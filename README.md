@@ -69,8 +69,8 @@ Simulated small-scale coffee shop sales log with the following attributes:
 ### 🔧 Table Setup
 
 - [🧱 Table Creation](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/CREATION%20OF%20TABLE%20coffee_shop_sales.sql)
-- ```sql
-  ----CREATION OF TABLE coffee_shop_sales-----
+
+```sql
 CREATE TABLE coffee_shop_sales (
     sale_id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     customer_name VARCHAR2(100),
@@ -79,27 +79,34 @@ CREATE TABLE coffee_shop_sales (
     sale_time TIMESTAMP,
     quantity NUMBER(5) DEFAULT 1
 );
+```
+
 - [📥 Data Insertion](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/INSERTION%20OF%20VALUES%20IN%20COFFEE_SHOP_SALES.sql)
-- ```sql
-  ---- INSERTION OF VALUES IN COFFEE_SHOP_SALES---
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('IYUKURI YABES', 'Latte', 3.50, TO_TIMESTAMP('2025-04-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'),1);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('IYUKURI YABES', 'Espresso', 2.00, TO_TIMESTAMP('2025-04-01 08:15:00', 'YYYY-MM-DD HH24:MI:SS'),2);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('JAMES MANZI', 'Cappuccino', 3.00, TO_TIMESTAMP('2025-04-01 08:20:00', 'YYYY-MM-DD HH24:MI:SS'),3);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('ERIC MANIRAGUHA', 'Mocha', 4.00, TO_TIMESTAMP('2025-04-01 08:45:00', 'YYYY-MM-DD HH24:MI:SS'),4);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('KWIZERA INNOCENT', 'Latte', 3.50, TO_TIMESTAMP('2025-04-01 08:50:00', 'YYYY-MM-DD HH24:MI:SS'),4);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('MUGISHA BOB', 'Americano', 2.50, TO_TIMESTAMP('2025-04-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'),5);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity)  
-VALUES ('AMATA STELLA', 'Cappuccino', 3.00, TO_TIMESTAMP('2025-04-01 09:05:00', 'YYYY-MM-DD HH24:MI:SS'),8);
 
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('IYUKURI YABES', 'Tea', 3.50, TO_TIMESTAMP('2025-04-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'),11);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('JAMES MANZI', 'IKIVUGUTO', 3.00, TO_TIMESTAMP('2025-04-01 08:20:00', 'YYYY-MM-DD HH24:MI:SS'),13);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('ERIC MANIRAGUHA', 'INSHYUNSHYU', 4.00, TO_TIMESTAMP('2025-04-01 08:45:00', 'YYYY-MM-DD HH24:MI:SS'),14);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('KWIZERA INNOCENT', 'IGIKOMA', 3.50, TO_TIMESTAMP('2025-04-01 08:50:00', 'YYYY-MM-DD HH24:MI:SS'),14);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity) VALUES ('MUGISHA BOB', 'COFFEE', 2.50, TO_TIMESTAMP('2025-04-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'),15);
-INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time,quantity)  
-VALUES ('AMATA STELLA', 'LATTEE', 3.00, TO_TIMESTAMP('2025-04-01 09:05:00', 'YYYY-MM-DD HH24:MI:SS'),18);
+ ```sql
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('IYUKURI YABES', 'Latte', 3.50, TO_TIMESTAMP('2025-04-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1);
 
-- ![Table Creation and insertion of data insertion Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/CREATION%20OF%20TABLE%20AND%20INSERTION%20OF%20VALUES%20IN%20COFFEE_SHOP_SALES.png)
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('IYUKURI YABES', 'Espresso', 2.00, TO_TIMESTAMP('2025-04-01 08:15:00', 'YYYY-MM-DD HH24:MI:SS'), 2);
+
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('JAMES MANZI', 'Cappuccino', 3.00, TO_TIMESTAMP('2025-04-01 08:20:00', 'YYYY-MM-DD HH24:MI:SS'), 3);
+
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('ERIC MANIRAGUHA', 'Mocha', 4.00, TO_TIMESTAMP('2025-04-01 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), 4);
+
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('KWIZERA INNOCENT', 'Latte', 3.50, TO_TIMESTAMP('2025-04-01 08:50:00', 'YYYY-MM-DD HH24:MI:SS'), 4);
+
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('MUGISHA BOB', 'Americano', 2.50, TO_TIMESTAMP('2025-04-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), 5);
+
+INSERT INTO coffee_shop_sales (customer_name, drink_type, price, sale_time, quantity)
+VALUES ('AMATA STELLA', 'Latte', 3.50, TO_TIMESTAMP('2025-04-01 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), 1);
+```
+ 
+ - ![Table Creation and insertion of data insertion Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/CREATION%20OF%20TABLE%20AND%20INSERTION%20OF%20VALUES%20IN%20COFFEE_SHOP_SALES.png)
 
 📝 *Initial table setup for running all window function queries.*
 
@@ -108,20 +115,22 @@ VALUES ('AMATA STELLA', 'LATTEE', 3.00, TO_TIMESTAMP('2025-04-01 09:05:00', 'YYY
 ### 🔄 Using `LAG()` & `LEAD()` to Compare Purchases
 
 - [📊 Using `LAG()` & `LEAD()` to Compare Purchases](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/using%20LAG%20and%20LEAD%20()%20Compare%20Values%20with%20Previous%20records.sql)
-- ```sql
-  -----Using `LAG()` & `LEAD()` to Compare Purchases-----
+
+```sql
 SELECT
-    customer_name,
-    drink_type,
-    price,
-    LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) AS prev_price,
-    CASE
-        WHEN price > LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) THEN 'HIGHER'
-        WHEN price < LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) THEN 'LOWER'
-        WHEN price = LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) THEN 'EQUAL'
-        ELSE 'N/A'
-    END AS price_comparison
-FROM coffee_sales;
+  customer_name,
+  drink_type,
+  price,
+  LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) AS previous_price,
+  LEAD(price) OVER (PARTITION BY customer_name ORDER BY sale_time) AS next_price,
+  CASE
+    WHEN price > LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) THEN 'HIGHER'
+    WHEN price < LAG(price) OVER (PARTITION BY customer_name ORDER BY sale_time) THEN 'LOWER'
+    ELSE 'EQUAL'
+  END AS trend_from_last_price
+FROM coffee_shop_sales;
+```
+
 - ![LAG & LEAD Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/using%20LAG%20and%20LEAD%20()%20Compare%20Values%20with%20Previous%20records.png)
 
 📌 *Compare each customer's current drink price to their previous purchase.*
@@ -133,16 +142,17 @@ FROM coffee_sales;
 ### 🏅 Rank Drinks per Customer (`RANK()` vs `DENSE_RANK()`)
 
 - [📈 Rank Drinks per Customer (`RANK()` vs `DENSE_RANK()](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/Using%20RANK()%20and%20DENSE_RANK()%20to%20%20Ranking%20Data%20within%20a%20Category.sql)
-- ```sql
-  ----Using RANK() and DENSE_RANK() to Rank Data within a Category---
 
+```sql
 SELECT
-    customer_name,
-    drink_type,
-    price,
-    RANK() OVER (PARTITION BY customer_name ORDER BY price DESC) AS rank_price,
-    DENSE_RANK() OVER (PARTITION BY customer_name ORDER BY price DESC) AS dense_rank_price
-FROM coffee_sales; 
+  customer_name,
+  drink_type,
+  price,
+  RANK() OVER (PARTITION BY customer_name ORDER BY price DESC) AS price_rank,
+  DENSE_RANK() OVER (PARTITION BY customer_name ORDER BY price DESC) AS price_dense_rank
+FROM coffee_shop_sales;
+```
+
 - ![RANK Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/Using%20RANK()%20and%20DENSE_RANK()%20to%20%20Ranking%20Data%20within%20a%20Category.png)
 
 📌 *Highlights ranking differences (ties vs no ties).*
@@ -155,16 +165,18 @@ FROM coffee_sales;
 
 - [🍾 Top 3 Drinks by Price per Customer](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/fetching%20top%203%20most%20expensive%20drinks%20per%20customer.sql)
   
-- ```sql
-  -----fetching top 3 most expensive drinks per customer----
-SELECT 
-        customer_name,
-        drink_type,
-        price,
-        RANK() OVER (PARTITION BY customer_name ORDER BY price DESC) AS drink_rank
-    FROM coffee_sales
+```sql
+SELECT *
+FROM (
+  SELECT
+    customer_name,
+    drink_type,
+    price,
+    RANK() OVER (PARTITION BY customer_name ORDER BY price DESC) AS drink_rank
+  FROM coffee_shop_sales
 )
 WHERE drink_rank <= 3;
+```
   
 - ![Top 3 Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/fetching%20top%203%20most%20expensive%20drinks%20per%20customer.png)
 
@@ -177,18 +189,21 @@ WHERE drink_rank <= 3;
 ### ⏳ First 2 Purchases per Customer
 
 - [🕵️ First 2 Purchases per Customer](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/retrieving%20the%20first%202%20records%20per%20customers%20%20on%20sale_column.sql)
-- ```sql
-  -- retrieving the first 2 records per customers  on sale_column---
+
+```sql
 SELECT *
 FROM (
-    SELECT 
-        customer_name,
-        drink_type,
-        sale_time,
-        ROW_NUMBER() OVER (PARTITION BY customer_name ORDER BY sale_time) AS order_rank
-    FROM coffee_sales
+  SELECT
+    customer_name,
+    drink_type,
+    price,
+    sale_time,
+    ROW_NUMBER() OVER (PARTITION BY customer_name ORDER BY sale_time ASC) AS row_num
+  FROM coffee_shop_sales
 )
-WHERE order_rank <= 2;
+WHERE row_num <= 2;
+```
+
 - ![First 2 Purchases Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/retrieving%20the%20first%202%20records%20per%20customers%20%20on%20sale_column.png)
 
 📌 *Uses `ROW_NUMBER()` to capture early purchase behavior.*
@@ -200,17 +215,19 @@ WHERE order_rank <= 2;
 ### 📊 Aggregation with `MAX() OVER()`
 
 - [📈Aggregation with `MAX() OVER()](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/Aggregation%20with%20Window%20Functions.sql)
-- ```sql
-  ---Aggregation with Window Functions by maximum value and overall maximum value, and Using PARTITION BY to differentiate between category-level and overall calculations-------
 
+
+```sql
 SELECT
-    customer_name,
-    drink_type,
-    price,
-    quantity,
-    MAX(price) OVER (PARTITION BY customer_name) AS max_price_per_customer,
-    MAX(price) OVER () AS overall_max_price
-FROM coffee_sales;  
+  customer_name,
+  drink_type,
+  price,
+  MAX(price) OVER (PARTITION BY customer_name) AS max_price_per_customer,
+  MAX(price) OVER () AS overall_max_price
+FROM coffee_shop_sales;
+```
+
+
 - ![Aggregation Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/Aggregation%20with%20Window%20Functions.png)
 
 📌 *Returns highest priced drink per customer and globally.*
