@@ -36,9 +36,13 @@ This project demonstrates the power of **SQL Window Functions** through real-wor
 
 ## 📦 **Repository Contents**
 
-📁 CUP_OF_SQL/ ├── 📸 COFFEE_SHOP_SALES_SCREENSHOOTS/ → Screenshots of SQL Developer outputs
+📁 CUP_OF_SQL/ 
+├── 📸 COFFEE_SHOP_SALES_SCREENSHOOTS/ → Screenshots of SQL Developer outputs
+
 ├── 🧾 SEPARATE FUNCTION SYNTAX/ → Table creation, insert statements & queries
+
 ├── 📜 coffee_shop_sales.sql → Full SQL syntax
+
 └── 📘 README.md → Explanation, visuals & findings
 
 
@@ -66,7 +70,7 @@ Simulated small-scale coffee shop sales log with the following attributes:
 
 - [🧱 Table Creation](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/CREATION%20OF%20TABLE%20coffee_shop_sales.sql)  
 - [📥 Data Insertion](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/SEPARATE%20FUNCTION%20SYNTAX/INSERTION%20OF%20VALUES%20IN%20COFFEE_SHOP_SALES.sql)  
-- ![Table Creation Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/CREATION%20OF%20TABLE%20AND%20INSERTION%20OF%20VALUES%20IN%20COFFEE_SHOP_SALES.png)
+- ![Table Creation and insertion of data insertion Screenshot](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/COFFEE_SHOP_SALES_SCREENSHOOTS/CREATION%20OF%20TABLE%20AND%20INSERTION%20OF%20VALUES%20IN%20COFFEE_SHOP_SALES.png)
 
 📝 *Initial table setup for running all window function queries.*
 
