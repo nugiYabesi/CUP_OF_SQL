@@ -269,7 +269,7 @@ Big thanks to our instructor **Eric Maniraguha** for guidance and challenge, and
 
 ## 🗓️ **Submission Details**
 
-- 📅 Submitted: **April 12, 2025, at 8:25 PM**  
+- 📅 Submitted: **April 12, 2025, at 8:40 PM**  
 - 📎 [📥 Download Full Project SQL File](https://github.com/nugiYabesi/CUP_OF_SQL/blob/main/coffee_shop_sales.sql)
 
 ---
